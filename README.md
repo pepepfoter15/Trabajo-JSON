@@ -6,7 +6,7 @@ Mi proyecto estará basado en un archivo JSON sobre los premios nobeles. Este ej
 
 -Contar información: Indica cuantas veces aparece las categorías química y paz. 
 
--Buscar o filtrar información: Filtrar pidiendo el año y que nos muestre todas las categorías.
+-Buscar o filtrar información: Filtrar pidiendo el año y la categoría y que muestre todas las caracterías de los galardonados o premiados (laureates).
 
 -Buscar información relacionada: Pedir el id del autor y que nos muestre todo sobre ese id;su nombre, su motivo (motivation) y la parte de ese mismo (share).
 
