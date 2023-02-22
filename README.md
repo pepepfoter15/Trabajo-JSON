@@ -4,10 +4,10 @@ Mi proyecto estará basado en un archivo JSON sobre los premios nobeles. Este ej
 
 -Listar información: Listar todos los id y nombres (con apellidos) de los ganadores de estos premios.
 
--Contar información: Contador de cuantas veces aparece las categorías química y paz. 
+-Contar información: Indica cuantas veces aparece las categorías química y paz. 
 
--Buscar o filtrar información: Filtrar pidiendo el año para que nos muestre él nombre completo y la conscuencia de ganar el premio ("motivation").
+-Buscar o filtrar información: Filtrar pidiendo el año y que nos muestre todas las categorías.
 
--Buscar información relacionada: Pedir el id del autor y extraer la categoría del premio.
+-Buscar información relacionada: Pedir el id del autor y que nos muestre todo sobre ese id;su nombre, su motivo (motivation) y la parte de ese mismo (share).
 
--Ejercicio libre -> Borrar diccionario: Eliminar diccionario pidiendo el año y la categoría.
+-Ejercicio libre -> Intercambiar autor: Pidiendo el id de la persona que quieres cambiar y el id del que quieres remplazar, intercambiar el nombre y el apellido de ellos. 
