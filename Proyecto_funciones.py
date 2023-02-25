@@ -1,4 +1,4 @@
-#Archivo con la funciones del proyecto de JSON
+#Archivo con la funciones del proyecto de JSON.
 
 def menu():
     opcion=int(input('''
