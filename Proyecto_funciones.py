@@ -1,6 +1,12 @@
 #Archivo con la funciones del proyecto de JSON.
+import json
+import os
+import math
 
-def menu():
+with open('Proyecto JSON.json') as r:
+    premiosnobeles = json.load(r)
+
+def menu(opcion):
     opcion=int(input('''
          PROYECTO JSON
     -----------------------------------------------
@@ -14,11 +20,28 @@ def menu():
     Introduce una opción de este menú ->'''))
     return(opcion)
 
-def listar_informacion():
+def listar_informacion(premionobeles):
     print("Listar todos los id y nombres (con apellidos) de los ganadores de estos premios.")
+    for premiados in premionobeles["prizes"]:
+        for id_nombres in premiados["laureates"]:
+                print("El id es ",id_nombres["id"]," y el nombre es ",id_nombres["firstname"])
 
-def contar_informacion():
+
+def contar_informacion(premionobeles):
     print("Indica cuantas veces aparece las categorías química y paz.")
+    contador_chemistry = 0
+    contador_peace = 0
+    for premiados in premionobeles["prizes"]:
+        if premiados["category"] == "chemistry":
+            contador_chemistry = contador_chemistry + 1
+        elif premiados["category"] == "peace":
+            contador_peace = contador_peace + 1
+
+    print("Hay ",contador_chemistry,"premios de química.")
+    print("Hay ",contador_peace,"premios de paz.")
+
+
+
 
 def buscar_filtar_informacion():
     print("Filtrar pidiendo el año y la categoría y que muestre todas las caracterías de los galardonados o premiados (laureates).")
